@@ -2,7 +2,9 @@ const express = require('express');
 const mainrouter = require('./router/router');
 const app = express();
 
-app.use('/',mainrouter);  
+app.use('/',mainrouter);  //http:localhost:3000/home/
+
+
 app.listen(3000,(error,result)=>{
     if(error){
         return console.log(error);
